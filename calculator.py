@@ -18,9 +18,8 @@ def calculator(number1, number2, operator):
 	print(z)
 
 def parse_input():
-	print('Enter equation: ')
-	i = input()
+	i = input('Enter Equation: ')
 	list = i.split()
 	calculator(list[0], list[2], list[1])
 
-
+parse_input()
