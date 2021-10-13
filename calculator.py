@@ -16,12 +16,12 @@ def calculator(number1, number2, operator):
 			z = pow(x, y)
 		else:
 			z = 'Invalid Operator'
-		print(z)
+		return z
 
 def parse_input():
 	i = input('Enter Equation: ')
 	list = i.split()
-	calculator(list[0], list[2], list[1])
+	return calculator(list[0], list[2], list[1])
 
 def is_number(num):
 	if float(num):
